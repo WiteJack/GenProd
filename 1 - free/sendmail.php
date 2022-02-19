@@ -1,5 +1,5 @@
 <?php
-    $to = "igorsabylin@yandex.ru";
+    $to = "order@salesgenerator.pro";
     $fromMail = trim($_POST['email']);
     $phone = trim($_POST['phone']);
 
