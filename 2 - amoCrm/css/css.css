@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&display=swap');
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#button{
+    width: 235px;
+    height: 70px;
+    background-color: #ff0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+#formContainer{
+    background-color: #fff;
+    width: 910px;
+    height: 560px;
+    display: none;
+}
+.left-form{
+    width: 535px;
+}
+.left-form h1{
+    font-weight: 700;
+    font-size: 26.37pt;
+    margin-top: 60px;
+    margin-left: 55px;
+    margin-bottom: 60px;
+}
+.docs{
+    width: 370px;
+    margin-left: 55px;
+}
+.left-form .docs img{
+    width: 37px;
+    height: 43px;
+    padding-right: 11px;
+}
+.left-form .file {margin-left: 32px; margin-top: 20px;}
+.left-form .file .filepng,.file .bookpng{
+    position: relative;
+    bottom: 0;
+}
+.left-form .file .bookpng{
+    z-index: 1;
+    bottom: 220px;
+    left: 50px;
+}
+.left-form .file .filepng{
+    z-index: 22;
+}
+.right-form{
+    width: 375px;
+}
+.right-form .closepng{
+    position: relative;
+    float: right;    
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+.right-form .form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: -150px;
+}
+.right-form .form h2{
+    font-size: 11.4pt;
+    font-weight: 400;
+    margin-top: 27px;
+    margin-bottom: 15px;
+}
+#email_input, #phone_input{
+    width: 349.06px;
+    height: 51.77px;
+    border: 2px solid #eee;
+    border-radius: .5em;
+}
+::placeholder{
+    padding-left: 1em;
+}
+.right-form .form img{
+    margin-top: 17px;
+    width: 359.06px;
+    cursor: pointer;
+}
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  @media (max-width: 800px){
+    #formContainer{
+        height: auto;
+        width: auto;
+        flex-direction: column;
+    }
+    .right-form .form{
+        position: relative;
+        bottom: auto;
+    }
+    .right-form{
+        width: auto;
+    }
+  }
